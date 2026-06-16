@@ -36,10 +36,10 @@ jobs:
         # Gom tất cả các file có đuôi .m3u bắt đầu bằng chữ live
         git add live*.m3u
         
-        # Kiểm tra nếu có file mới hoặc có sự thay đổi thì mới tiến hành commit để tránh báo lỗi trống
+        # Kiểm tra nếu có thay đổi thì mới tiến hành commit, sửa 'print' thành 'echo' để hết lỗi sh
         if [ -n "$(git status --porcelain)" ]; then
           git commit -m "Auto-update: Cap nhat cac list IPTV sach"
           git push
         else
-          print "Khong co thay doi nao de cap nhat."
+          echo "Khong co thay doi nao de cap nhat."
         fi

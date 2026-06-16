@@ -102,7 +102,7 @@ def main():
         # Chỉ check các file có đuôi .m3u hoặc .txt
         # Bỏ qua các file cấu hình hệ thống và file kết quả "live_" để không bị check vòng lặp
         if (file_name.endswith(".m3u") or file_name.endswith(".txt")) \
-           and not file_name.startswith("live_") \
+           and not file_name.startswith("live") \
            and file_name != "requirements.txt":
             
             # Tự động đặt tên file sạch là live_ + tên file cũ

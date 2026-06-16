@@ -2,10 +2,10 @@ name: Tu dong kiem tra IPTV song chet
 
 on:
   schedule:
-    # Hen gio chay tu dong (Muiz gio UTC): 0h00 sang UTC = 7h00 sang Viet Nam moi ngay
+    # Hẹn giờ chạy tự động: 0h00 sáng UTC = 7h00 sáng Việt Nam mỗi ngày
     - cron: '0 0 * * *'
   
-  # Giup ban co the bam nut "Chay thu cong" bat ky luc nao ban muon
+  # Giúp bạn có thể bấm nút "Chạy thủ công" bất kỳ lúc nào bạn muốn
   workflow_dispatch:
 
 jobs:
@@ -13,21 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Buoc 1: Lay code tu kho luu tru ve may ao cua GitHub
+    # Bước 1: Lấy code từ kho lưu trữ về máy ảo
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    # Buoc 2: Cai dat moi truong Python
+    # Bước 2: Cài đặt môi trường Python (Đã sửa lỗi chính tả ở đây)
     - name: Set up Python
-      uses: actions/python-version@v5
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.x'
+        python-version: '3.10'
 
-    # Buoc 3: Chay file script kiem tra link ma ban da tao o Buoc 4
+    # Bước 3: Chạy file script kiểm tra link
     - name: Run IPTV Checker
       run: python checker.py
 
-    # Buoc 4: Tu dong cap nhat file live.m3u moi nguoc tro lai GitHub cua ban
+    # Bước 4: Tự động cập nhật file live.m3u mới ngược trở lại GitHub
     - name: Commit and Push changes
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"

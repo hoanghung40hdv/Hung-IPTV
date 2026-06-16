@@ -34,7 +34,7 @@ jobs:
         git config --local user.name "github-actions[bot]"
         
         # Gom tất cả các file có đuôi .m3u bắt đầu bằng chữ live
-        git add live*.m3u
+        git add live*.*
         
         # Kiểm tra nếu có thay đổi thì mới tiến hành commit, sửa 'print' thành 'echo' để hết lỗi sh
         if [ -n "$(git status --porcelain)" ]; then

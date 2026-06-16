@@ -1,0 +1,36 @@
+name: Tu dong kiem tra IPTV song chet
+
+on:
+  schedule:
+    # Hen gio chay tu dong (Muiz gio UTC): 0h00 sang UTC = 7h00 sang Viet Nam moi ngay
+    - cron: '0 0 * * *'
+  
+  # Giup ban co the bam nut "Chay thu cong" bat ky luc nao ban muon
+  workflow_dispatch:
+
+jobs:
+  check-iptv:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Buoc 1: Lay code tu kho luu tru ve may ao cua GitHub
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # Buoc 2: Cai dat moi truong Python
+    - name: Set up Python
+      uses: actions/python-version@v5
+      with:
+        python-version: '3.x'
+
+    # Buoc 3: Chay file script kiem tra link ma ban da tao o Buoc 4
+    - name: Run IPTV Checker
+      run: python checker.py
+
+    # Buoc 4: Tu dong cap nhat file live.m3u moi nguoc tro lai GitHub cua ban
+    - name: Commit and Push changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add live.m3u
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Loc link IPTV sach" && git push)

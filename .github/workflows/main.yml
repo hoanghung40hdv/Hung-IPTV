@@ -2,10 +2,10 @@ name: Tu dong kiem tra IPTV song chet
 
 on:
   schedule:
-    # Hẹn giờ chạy tự động: 0h00 sáng UTC = 7h00 sáng Việt Nam mỗi ngày
+    # Hẹn giờ chạy tự động: 7h00 sáng Việt Nam mỗi ngày
     - cron: '0 0 * * *'
   
-  # Giúp bạn có thể bấm nút "Chạy thủ công" bất kỳ lúc nào bạn muốn
+  # Giúp bạn có thể bấm nút "Chạy thủ công" bất kỳ lúc nào
   workflow_dispatch:
 
 jobs:
@@ -17,20 +17,29 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    # Bước 2: Cài đặt môi trường Python (Đã sửa lỗi chính tả ở đây)
+    # Bước 2: Cài đặt môi trường Python
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.10'
 
-    # Bước 3: Chạy file script kiểm tra link
+    # Bước 3: Chạy file script kiểm tra tất cả các list kênh
     - name: Run IPTV Checker
       run: python checker.py
 
-    # Bước 4: Tự động cập nhật file live.m3u mới ngược trở lại GitHub
+    # Bước 4: Tự động gom tất cả file kết quả có tên bắt đầu bằng "live" để lưu lên GitHub
     - name: Commit and Push changes
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add live.m3u
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Loc link IPTV sach" && git push)
+        
+        # Gom tất cả các file có đuôi .m3u bắt đầu bằng chữ live
+        git add live*.m3u
+        
+        # Kiểm tra nếu có file mới hoặc có sự thay đổi thì mới tiến hành commit để tránh báo lỗi trống
+        if [ -n "$(git status --porcelain)" ]; then
+          git commit -m "Auto-update: Cap nhat cac list IPTV sach"
+          git push
+        else
+          print "Khong co thay doi nao de cap nhat."
+        fi

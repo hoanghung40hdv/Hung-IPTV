@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="SPOTV.vn" tvg-name="SPOTV HD" group-title="THỂ THAO",SPOTV HD
+http://113.189.21.251:4022/rtp/232.84.1.xxx:xxxx
+#EXTINF:-1 tvg-id="SPOTV2.vn" tvg-name="SPOTV2 HD" group-title="THỂ THAO",SPOTV2 HD
+http://113.189.21.251:4022/rtp/232.84.1.xxx:xxxx

@@ -1,22 +1,26 @@
 #EXTM3U
-#EXTINF:-1 group-title="🔴| Live Event" tvg-logo="http://gg.gg/live4kkkkk",2.Live Concacaf Fox Sport 4K+11h
-http://45.158.254.2:80/play/live.php?mac=00:1A:79:CD:E5:45&stream=1124346&extension=ts&play_token=Pd2uVhI6I3
 #EXTINF:-1 group-title="4K-Need VPN" tvg-logo="http://gg.gg/canalkkk",2.Canal+ Sports-Canada VPN
 http://epg.protv.cc:80/live/brenda/brenda123/526130.m3u8
+#EXTINF:-1 group-title="🔴| Live Event" tvg-logo="http://gg.gg/live4kkkkk",2.Live Concacaf Fox Sport 4K+11h
+http://45.158.254.2:80/play/live.php?mac=00:1A:79:CD:E5:45&stream=1124346&extension=ts&play_token=Pd2uVhI6I3
 #EXTINF:-1 group-title="4K-Need VPN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/57/DIGI_4K.jpg",2.DIGI-Canada VPN
 http://epg.protv.cc:80/live/brenda/brenda123/443338.m3u8
 #EXTINF:-1 group-title="4K-Need VPN" tvg-logo="http://gg.gg/foxsport4kkkk",1.Fox Sports 4K-Canada VPN
 http://epg.protv.cc:80/live/patrice/patrice/1124346.m3u8
-#EXTINF:-1 group-title="Hub Premier" tvg-logo="http://gg.gg/hubpremierkkk",2.Hub Premier 2 UHD
-http://epg.protv.cc:80/live/Verhoeven/Verhoeven/1032518.m3u8
+#EXTINF:-1 group-title="Sky Sports UK" tvg-logo="http://gg.gg/ssmaineventkkk",2.Sky Sports Main Event UHD
+http://gooserace.xyz/live/annmarie/annmarie/3387919.m3u8
 #EXTINF:-1 group-title="Astro Supersports" tvg-logo="http://gg.gg/astrokkk",2.Astro Supersports UHD
 http://epg.protv.cc:80/live/Verhoeven/Verhoeven/1016544.m3u8
-#EXTINF:-1 group-title="Eleven Sports" tvg-logo="http://gg.gg/elevenkkk",4.Eleven Sports UHD
-http://45.158.254.2:80/play/live.php?mac=00:1A:79:19:48:3C&stream=905665&extension=ts&play_token=6pRZLD1Zsh
+#EXTINF:-1 group-title="Hub Premier" tvg-logo="http://gg.gg/hubpremierkkk",2.Hub Premier 2 UHD
+http://epg.protv.cc:80/live/Verhoeven/Verhoeven/1032518.m3u8
 #EXTINF:-1 group-title="Bundesliga" tvg-logo="http://gg.gg/uhd1xkkk",1.UHD1
 http://45.158.254.2:80/play/live.php?mac=00:1A:79:19:48:3C&stream=540014&extension=ts&play_token=wZlVWol6yf
+#EXTINF:-1 group-title="Eleven Sports" tvg-logo="http://gg.gg/elevenkkk",4.Eleven Sports UHD
+http://45.158.254.2:80/play/live.php?mac=00:1A:79:19:48:3C&stream=905665&extension=ts&play_token=6pRZLD1Zsh
 #EXTINF:-1 group-title="Hub Premier" tvg-logo="http://gg.gg/hubpremierkkk",3.Hub Premier 2 UHD
 http://tv.trexiptv.com:80/play/live.php?mac=00:1A:79:4F:E5:24&stream=1032518&extension=ts&play_token=23sRdi72eC
+#EXTINF:-1 group-title="Astro Supersports" tvg-logo="http://gg.gg/astrokkk",5.Astro Supersports UHD
+http://gooserace.xyz/live/annmarie/annmarie/3351122.m3u8
 #EXTINF:-1 group-title="USA Sports" tvg-logo="http://gg.gg/foxsport4kkkk",3.Fox Sports 4K
 http://tv.trexiptv.com:80/play/live.php?mac=00:1A:79:4F:E5:24&stream=1124346&extension=ts&play_token=4LT1bBbn8g
 #EXTINF:-1 group-title="USA Sports" tvg-logo="http://gg.gg/NBCsportskkk",5.NBC Sports UHD
@@ -29,14 +33,14 @@ http://kb001.xyz:80/gWN7T51fr8L1/WaZGW4VZ3l/179589
 http://45.158.254.2:80/play/live.php?mac=00:1A:79:63:74:5e&stream=1235871&extension=ts&play_token=RZj6xpmSUJ
 #EXTINF:-1 group-title="USA Sports" tvg-logo="http://gg.gg/ufckkk",5.UFC FIGHT PASS FHD
 http://primestreams.tv:826/live/Giancarlo/Giancarlo/33843.ts
-#EXTINF:-1 group-title="USA Sports" tvg-logo="https://www.freepnglogos.com/uploads/wwe-logo-black-png-8.png",5.WWE FHD
-http://primestreams.tv:826/live/Giancarlo/Giancarlo/36372.ts
 #EXTINF:-1 group-title="USA Sports" tvg-logo="https://www.freepnglogos.com/uploads/wwe-logo-black-png-8.png",4.WWE FHD
 http://realsport.scalecdn.co:8080/live/111222/111222/3701.m3u8
-#EXTINF:-1 group-title="USA Sports" tvg-logo="http://gg.gg/ssteniskkk",1.Sky Sport Tennis IT FHD
-http://45.158.254.2:80/play/live.php?mac=00:1A:79:63:74:5e&stream=692433&extension=ts&play_token=GYcwrkIfSw
+#EXTINF:-1 group-title="USA Sports" tvg-logo="https://www.freepnglogos.com/uploads/wwe-logo-black-png-8.png",5.WWE FHD
+http://primestreams.tv:826/live/Giancarlo/Giancarlo/36372.ts
 #EXTINF:-1 group-title="USA Sports" tvg-logo="http://gg.gg/tennisfhdkkk",4.TENNIS US FHD
 http://restream-live.realiptv.to:8080/live/Daryl/12345/3685.m3u8
+#EXTINF:-1 group-title="USA Sports" tvg-logo="http://gg.gg/ssteniskkk",1.Sky Sport Tennis IT FHD
+http://45.158.254.2:80/play/live.php?mac=00:1A:79:63:74:5e&stream=692433&extension=ts&play_token=GYcwrkIfSw
 #EXTINF:-1 group-title="USA Sports" tvg-logo="https://www.hdicon.com/wp-content/uploads/2010/08/USA_Network_1979.png",1.USA Networks FHD
 http://realsport.scalecdn.co:8080/live/111222/111222/3694.m3u8
 #EXTINF:-1 group-title="LaLiga" tvg-logo="http://gg.gg/danzkkk",1.DAZN FHD-
